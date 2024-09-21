@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Noto+Sans+Warang+Citi&display=swap');
+
+:root {
+    --background-color: hsl(231, 15%, 18%);
+    --light-text: hsl(60, 30%, 96%);
+    --zebra-back: hsl(230, 12%, 20%);
+    --border-color: hsl(230, 14%, 36%);
+    --dark-border: hsl(231, 14%, 19%);
+    --light-border: hsl(231, 14%, 40%);
+    --table-background: hsl(231, 17%, 32%);
+    background-color: var(--background-color);
+    color: var(--light-text);
+}
+
+.myTable {
+    border: solid .3em var(--border-color);
+    background-color: var(--table-background);
+    margin: auto;
+    margin-top: 5em;
+}
+
+.myTable tr:nth-child(even) {
+    background-color: var(--zebra-back);
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    transition: 1s;
+}
+
+.myTable td {
+    border: .2em solid var(--light-border);
+    padding: .3em;
+    width: 20%;
+}
+
+.myTable tr:nth-child(even):hover {
+    transform: scale(1.1);
+}
